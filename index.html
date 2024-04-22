@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Supermercado XYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://campos24horas.com.br/portal/wp-content/uploads/2018/01/Supermercados.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column; /* Alinea los elementos verticalmente */
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 500px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 500px;
+            margin-top: 50px; /* Ajuste del margen superior */
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-form button:hover {
+            background-color: #45a049;
+        }
+
+        .options {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s ease;
+        }
+
+        .options a:hover {
+            background-color: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 10;
+            width: 20%;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form class="login-form" onsubmit="return false;">
+            <input type="text" placeholder="Usuario" required><br>
+            <input type="password" placeholder="Contraseña" required><br>
+            <button onclick="login()">Iniciar Sesión</button>
+        </form>
+        <div class="options">
+            <a href="#">Registrar Nuevo Usuario</a>
+            <a href="#">Olvidaste tu Contraseña?</a>
+            <a href="#">Contáctenos</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 @DevGenius. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        function login() {
+            // Aquí puedes agregar la lógica para iniciar sesión
+            // Por ejemplo, validar credenciales y redirigir al usuario a la página principal
+            window.location.href = "https://roquecarreno.github.io/Interfaz01/"; // Reemplaza "https://tupagina.com/" con la URL de tu página principal
+        }
+    </script>
+</body>
+</html>
+
